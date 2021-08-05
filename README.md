@@ -23,12 +23,59 @@ L2 modules may also define supporting resources needed by the primary resource. 
 6. [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
 5. [Setting your credentials in Node](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html)
 
-
-# Install CDK
+# Process
+### 1. Install CDK
 
 ```bash
-npm install -g aws-cdk
+$ npm install -g aws-cdk
 ```
+
+### 2. Init your project
+
+```bash
+$ mkdir cdk
+
+$ cd cdk
+
+$ cdk init app --language python
+```
+
+### 3. Start the virtual environment
+
+If the venv folder hasn't been created
+
+```bash
+$ python3 -m venv .venv
+```
+
+If the virtual environment has been set up you can start it
+
+```bash
+$ source .venv/bin/activate
+```
+
+### 4. Install venv dependencies
+```bash
+$ pip install -r requirements.txt
+```
+
+### 5. Synthesize the CloudFormation template
+
+```
+$ cdk synth
+```
+
+To add additional dependencies, for example other CDK libraries, just add
+them to your `setup.py` file and rerun the `pip install -r requirements.txt`
+command.
+
+## Useful commands
+
+ * `cdk ls`          list all stacks in the app
+ * `cdk synth`       emits the synthesized CloudFormation template
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk docs`        open CDK documentation
 
 
 ## Important Links
