@@ -12,6 +12,22 @@ L2 modules may also define supporting resources needed by the primary resource. 
 
 * **Patterns** or **L3**: Patterns declare multiple resources to create entire AWS architectures for particular use cases. All the plumbing is already hooked up, and configuration is boiled down to a few important parameters. In the AWS Construct Library, patterns are in separate modules from L1 and L2 constructs.
 
+# Prerequisites
+
+1. [AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
+2. [Configured credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html)
+3. [NodeJS](https://nodejs.org/en/download/)
+    * **Note:** 13.0.0 through 13.6.0 are not compatible.
+4. [Python3.6 or later](https://www.python.org/)
+5. [Setting your credentials in Node](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html)
+
+
+# Install CDK
+
+```bash
+npm install -g aws-cdk
+```
+
 
 ## Important Links
 1. [AWS CDK API reference](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html)
