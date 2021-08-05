@@ -19,6 +19,8 @@ L2 modules may also define supporting resources needed by the primary resource. 
 3. [NodeJS](https://nodejs.org/en/download/)
     * **Note:** 13.0.0 through 13.6.0 are not compatible.
 4. [Python3.6 or later](https://www.python.org/)
+5. [Pip](https://pip.pypa.io/en/stable/installation/)
+6. [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
 5. [Setting your credentials in Node](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html)
 
 
